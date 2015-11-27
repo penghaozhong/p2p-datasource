@@ -1,5 +1,7 @@
 package com.lcsuo.p2p.collect.entity;
 
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -198,6 +200,11 @@ public class P2p {
 	 * "1"
 	 */
 	private String newTrustCreditor;
+	
+	
+	private List<PlatReview> platReviewList;
+	
+	
 
 	public String getId() {
 		return id;
@@ -485,6 +492,14 @@ public class P2p {
 
 	public void setNewTrustCreditor(String newTrustCreditor) {
 		this.newTrustCreditor = newTrustCreditor;
+	}
+
+	public List<PlatReview> getPlatReviewList() {
+		return platReviewList;
+	}
+
+	public void setPlatReviewList(List<PlatReview> platReviewList) {
+		this.platReviewList = platReviewList;
 	}
 	
 	
