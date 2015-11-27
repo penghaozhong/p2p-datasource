@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
  * p2p机构
- * @author penghaozhong
+ * @author jacky
  *
  */
 @Document(collection = "p2p")
@@ -166,6 +166,9 @@ public class P2p {
 	
 	/**
 	 * 平台状态
+	 * 
+	 * 3:体现困难
+	 * 5：跑路
 	 */
 	private String platStatus;
 	

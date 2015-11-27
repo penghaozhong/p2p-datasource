@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
  * 评论
- * @author penghaozhong
+ * @author jacky
  *
  */
 @Document(collection = "comment")
