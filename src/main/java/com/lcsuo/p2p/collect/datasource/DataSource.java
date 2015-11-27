@@ -1,8 +1,6 @@
 package com.lcsuo.p2p.collect.datasource;
 
-import java.util.List;
-
-import com.lcsuo.p2p.collect.entity.P2p;
+import com.lcsuo.p2p.collect.entity.WdzjPage;
 
 public interface DataSource {
 	
@@ -11,7 +9,7 @@ public interface DataSource {
 	 * @param url 查询的网站地址
 	 * @return
 	 */
-	public List<P2p> search(String url);
+	public WdzjPage search(String url);
 	
 	
 	
