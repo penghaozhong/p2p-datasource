@@ -1,7 +1,5 @@
 package com.lcsuo.p2p.datasource;
 
-import com.alibaba.fastjson.JSONObject;
-import com.lcsuo.p2p.collect.dao.MongoDBUtils;
 import com.lcsuo.p2p.collect.datasource.DataSource;
 import com.lcsuo.p2p.collect.datasource.WdzjDataSource;
 import com.lcsuo.p2p.collect.entity.P2p;
