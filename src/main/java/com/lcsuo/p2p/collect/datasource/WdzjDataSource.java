@@ -19,6 +19,7 @@ import org.apache.http.util.EntityUtils;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.lcsuo.p2p.collect.entity.P2p;
+import com.lcsuo.p2p.collect.entity.PlatReview;
 import com.lcsuo.p2p.collect.entity.WdzjPage;
 
 /**
@@ -30,7 +31,7 @@ import com.lcsuo.p2p.collect.entity.WdzjPage;
 public class WdzjDataSource implements DataSource {
 
 	/**
-	 * 查询page对象
+	 * 查询p2p列表总体对象
 	 */
 	public WdzjPage search(String url) {
 		RequestConfig config = RequestConfig.custom().setConnectionRequestTimeout(30 * 1000)
@@ -74,7 +75,7 @@ public class WdzjDataSource implements DataSource {
 	}
 
 	/**
-	 * 查询p2p集合
+	 * 查询p2p列表集合
 	 * 
 	 * @param url
 	 * @param pageCount
@@ -117,6 +118,16 @@ public class WdzjDataSource implements DataSource {
 			}
 		}
 		return evidencesList;
+	}
+	
+	/**
+	 * 查询平台留言
+	 * @see susonglin
+	 * @param platformId
+	 * @return
+	 */
+	public List<PlatReview> search(int platformId) {
+		return null;
 	}
 
 }

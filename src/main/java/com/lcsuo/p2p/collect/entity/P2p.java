@@ -161,12 +161,6 @@ public class P2p {
 	private String zonghezhishuRanking;
 	
 	/**
-	 * 排名
-	 * 29
-	 */
-	private String platReviewVo;
-	
-	/**
 	 * 平台状态
 	 * 
 	 * 3:体现困难
@@ -436,14 +430,6 @@ public class P2p {
 
 	public void setZonghezhishuRanking(String zonghezhishuRanking) {
 		this.zonghezhishuRanking = zonghezhishuRanking;
-	}
-
-	public String getPlatReviewVo() {
-		return platReviewVo;
-	}
-
-	public void setPlatReviewVo(String platReviewVo) {
-		this.platReviewVo = platReviewVo;
 	}
 
 	public String getPlatStatus() {
