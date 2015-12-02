@@ -76,6 +76,11 @@ public class P2p {
 	private String locationCityName;
 	
 	/**
+	 * 经纬度
+	 */
+	private String location;
+	
+	/**
 	 * 上线时间
 	 * "2012-07-15"
 	 */
@@ -330,6 +335,14 @@ public class P2p {
 
 	public String getPlatEarnings() {
 		return platEarnings;
+	}
+
+	public String getLocation() {
+		return location;
+	}
+
+	public void setLocation(String location) {
+		this.location = location;
 	}
 
 	public void setPlatEarnings(String platEarnings) {
